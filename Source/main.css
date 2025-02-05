@@ -14,3 +14,23 @@
         margin-left: -300px;
     }
 }
+@keyframes typing {
+    
+    from { width: 0; }
+    to { width: 20%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+.typing-container {
+    display: inline-block;
+    font-family: monospace;
+    font-size: 24px;
+    border-right: 3px solid black; /* Yozayotgan odam kursori */
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 2s steps(12) forwards, blink 0.8s infinite;
+}
